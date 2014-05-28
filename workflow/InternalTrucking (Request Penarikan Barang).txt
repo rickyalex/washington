@@ -1,0 +1,37 @@
+1. Tambahin di tabel master_data..workflow (id_workflow= 053)
+053	1	0	APPL	APPL	NULL	CAP	CN	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               	Request Penarikan	Y
+053	1	1	APPL	APPL	NULL	DRF	SV	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               		Y
+053	1	2	APPL	CD00	NULL	PCD	SB	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               		Y
+053	2	1	CD00	APPL	NULL	RCD	RJ	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               	 	Y
+053	2	3	CD00	APPL	NULL	VCD	VR	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               		Y
+053	3	0	APPL	APPL	NULL	CAP	CN	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               		Y
+053	3	4	APPL	APPL	NULL	CLS	CL	2013-04-03 13:51:01.000	iks                                               	2013-04-03 13:51:01.000	iks                                               		Y
+
+2. Tambahin di tabel master_data..status
+PCD	Post To CDS	Post To CDS	2014-04-03 14:25:00.000	EOFFICE                                           	2014-04-03 14:25:00.000	EOFFICE                                           	Y
+VCD	Verify By CDS	Verify By CDS	2014-04-03 14:25:00.000	EOFFICE                                           	2014-04-03 14:25:00.000	EOFFICE                                           	Y
+RCD	Reject by CDS	Reject by CDS	2002-08-09 15:00:00.000	EOFFICE                                           	2002-08-09 15:00:00.000	EOFFICE                                           	Y
+
+3. Tambahin di tabel master_data..notification
+8368	IKSR	PB001	PB101	CD00	CDSRG 	2014-04-03 14:51:11.000	EOFFICE                                           	2014-04-03 14:51:11.000	EOFFICE                                           	Request Penarikan Barang	Y
+
+
+4. Tambahin di tabel master_data..notification_member
+CDSRG 	1	0001115341     	2014-04-03 15:04:44.000	Internal Trucking                                 	2014-04-03 15:04:44.000	NULL	Y
+CDSRG 	2	0001116522     	2014-04-03 15:04:44.000	Internal Trucking                                 	2014-04-03 15:04:44.000	NULL	Y
+
+
+5. Tambahin di tabel master_data..application
+PB001	Sistem Penarikan Barang	1.0  	2014-04-03 14:36:13.000	EOFFICE                                           	2014-04-03 14:36:13.000	EOFFICE                                           	Y
+
+
+6. Tambahin di tabel master_data..sub_application
+PB001	PB101	F	Sistem Penarikan Barang	NULL	PB        	1	99999999	0	2014-04-03 14:42:04.000	EOFFICE                                           	2014-04-03 14:42:04.000	EOFFICE                                           	Y
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<?php
+
+	//eoffice related function 
+	//include_once('./includes/eofficefunctions.php');
+
+	$total = GetTotalUnreadMessage($userid);
+	
+	if($total == 0)	{
+		$newmail = "";
+	}	
+	else {
+		$newmail = "<img src='images/newmail1.gif' style='height:15px;'><font color='red'> ($total unread)</font>";
+	}	
+?>
+				<ul id="menutree" class="easyui-tree" data-options="animate:true">  
+					<li data-options="id:1000">  
+						<span>Folder(s)</span>  
+						<ul>  
+							<li data-options="iconCls:'icon-inbox',id:1010,attributes:'Inbox'">  
+								<span ><a href="#" onclick="opentab('Inbox')">Inbox</a> <?php echo $newmail; ?></span>  
+							</li>  
+							<li data-options="iconCls:'icon-draft',id:1020,attributes:'Draft'">  
+								<span><a href="#" onclick="opentab('Draft')">Draft</a></span>  
+							</li>  
+							<li data-options="iconCls:'icon-sent',id:1030,attributes:'Sent'">  
+								<span><a href="#" onclick="opentab('Sent')">Sent</a></span>  
+							</li>  
+							<li data-options="iconCls:'icon-trash',id:1040,attributes:'Trash'">  
+								<span><a href="#" onclick="opentab('Trash')">Trash</a></span>  
+							</li>  
+							<li data-options="iconCls:'icon-my-profile',id:1050,attributes:'My Profile'">  
+								<span><a href="#" onclick="opentab('My Profile')">My Profile</a></span>  
+							</li>  
+							<li data-options="iconCls:'icon-faq',id:1060,attributes:'FAQ'">  
+								<span><a href="#" onclick="opentab('FAQ')">FAQ</a></span>  
+							</li> 
+							<li data-options="iconCls:'icon-my-document-status',id:2070,attributes:'My Document Status'">  
+								<span><a href="#" onclick="opentab('My Document Status')">My Document Status</a></span>  
+							</li> 								
+						</ul>  
+					</li>  
+					
+					<li data-options="id:2000">  
+						<span>eOffice Application</span>  
+						<ul>  
+							<li data-options="iconCls:'icon-payment',state:'closed',id:2100">
+								<span>ePayment</span>  
+								<ul>  
+									<li data-options="id:2110"><span><a href="#">Advanced Application</a></span></li>  
+									<li data-options="id:2120"><span><a href="#">Payment Application</a></span></li>  
+									<li data-options="id:2130"><span><a href="#">Advance Setlement</a></span></li>  
+									<li data-options="id:2140"><span><a href="#">Deposit Slip</a></span></li>  
+								</ul>  
+							</li>
+							<li data-options="iconCls:'icon-outsideduty',state:'closed',id:2200">
+								<span>e-OutsideDuty</span>  
+								<ul>  
+									<li data-options="id:2210"><span><a href="#">Application</a></span></li>  
+									<li data-options="id:2220"><span><a href="#">Expense</a></span></li>  
+								</ul>  
+							</li>	
+							<li data-options="iconCls:'icon-eleave',state:'closed',id:2300">
+								<span>e-Leave for Expatriate</span>  
+								<ul>  
+									<li data-options="id:2310"><span><a href="#">Application</a></span></li>  
+									<li data-options="id:2320"><span><a href="#">Expense</a></span></li>  
+								</ul>  
+							</li>
+							<li data-options="iconCls:'icon-vehicle',id:2400">
+								<span><a href="#">e-Vehicle</a></span>  
+							</li>	
+							<li data-options="iconCls:'icon-visitor',id:2500">
+								<span><a href="#">e-Visitor</a></span>  
+							</li>	
+							<li data-options="iconCls:'icon-memo',id:2600">
+								<span><a href="#">e-Memo</a></span>  
+							</li>	
+							<li data-options="iconCls:'icon-cuis',id:2700">
+								<span><a href="#">CUIS</a></span>  
+							</li>								
+						</ul>  
+					</li>  	
+					
+					<li data-options="id:9000">  
+						<span>Special Folder</span>  
+						<ul>  
+							<li data-options="iconCls:'icon-my-document-status',id:9001"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9002"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9003"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9004"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9005"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9006"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9007"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9008"><span><a href="#">Bla bla bla</a></span></li>  
+							<li data-options="iconCls:'icon-my-document-status',id:9009"><span><a href="#">Bla bla bla</a></span></li>  
+						</ul>  
+					</li>  
+					
+					
+					
+				</ul>  
